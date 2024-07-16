@@ -14,6 +14,11 @@
 		B725D7902C41C33C004D8AEA /* Final_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725D78F2C41C33C004D8AEA /* Final_ProjectTests.swift */; };
 		B725D79A2C41C33C004D8AEA /* Final_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725D7992C41C33C004D8AEA /* Final_ProjectUITests.swift */; };
 		B725D79C2C41C33C004D8AEA /* Final_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725D79B2C41C33C004D8AEA /* Final_ProjectUITestsLaunchTests.swift */; };
+		B725D8592C4707C6004D8AEA /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725D8582C4707C5004D8AEA /* HomePage.swift */; };
+		B725D85B2C4707DA004D8AEA /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725D85A2C4707DA004D8AEA /* CalendarView.swift */; };
+		B725D85D2C4707E9004D8AEA /* SymptomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725D85C2C4707E9004D8AEA /* SymptomsView.swift */; };
+		B725D85F2C4707FF004D8AEA /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725D85E2C4707FF004D8AEA /* FAQ.swift */; };
+		B725D8612C470825004D8AEA /* Stigma.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725D8602C470825004D8AEA /* Stigma.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		B725D7952C41C33C004D8AEA /* Final ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Final ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B725D7992C41C33C004D8AEA /* Final_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ProjectUITests.swift; sourceTree = "<group>"; };
 		B725D79B2C41C33C004D8AEA /* Final_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B725D8582C4707C5004D8AEA /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		B725D85A2C4707DA004D8AEA /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		B725D85C2C4707E9004D8AEA /* SymptomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsView.swift; sourceTree = "<group>"; };
+		B725D85E2C4707FF004D8AEA /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
+		B725D8602C470825004D8AEA /* Stigma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stigma.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,11 @@
 		B725D7722C41C338004D8AEA = {
 			isa = PBXGroup;
 			children = (
+				B725D8582C4707C5004D8AEA /* HomePage.swift */,
+				B725D85A2C4707DA004D8AEA /* CalendarView.swift */,
+				B725D85C2C4707E9004D8AEA /* SymptomsView.swift */,
+				B725D85E2C4707FF004D8AEA /* FAQ.swift */,
+				B725D8602C470825004D8AEA /* Stigma.swift */,
 				B725D77D2C41C338004D8AEA /* Final Project */,
 				B725D78E2C41C33C004D8AEA /* Final ProjectTests */,
 				B725D7982C41C33C004D8AEA /* Final ProjectUITests */,
@@ -258,6 +273,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B725D7812C41C338004D8AEA /* ContentView.swift in Sources */,
+				B725D85D2C4707E9004D8AEA /* SymptomsView.swift in Sources */,
+				B725D85F2C4707FF004D8AEA /* FAQ.swift in Sources */,
+				B725D8612C470825004D8AEA /* Stigma.swift in Sources */,
+				B725D8592C4707C6004D8AEA /* HomePage.swift in Sources */,
+				B725D85B2C4707DA004D8AEA /* CalendarView.swift in Sources */,
 				B725D77F2C41C338004D8AEA /* Final_ProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

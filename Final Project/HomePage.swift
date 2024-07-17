@@ -18,35 +18,25 @@ struct HomePage: View {
                 VStack(){
                     
                     Image("logo")
-                        
-                    Text("Red Flag")
-                        .font(.system(size: 48))
-                        .bold()
+                    Image("Red Flag")
+                        .resizable()
+                        .frame(width:300, height:125)
                     //Text("Welcome to Red Flag! ")
                     //Text("This app is here to help YOU track your period!")
                     .padding()
                     NavigationLink(destination: CalendarView()) {
-                        Text("Calendar         ")
-                            .bold()
-                            .tint(.purple)
-                            .font(.system(size: 34))
-                            .background(
-                                            RoundedRectangle(cornerRadius: 10)
-                                                .stroke(Color.purple, lineWidth: 2)
-                                        )
+                        Image("Calendar")
+                            .resizable()
+                            .frame(width:225.0, height:100)
+                            
                             //.border(Color.purple)
                             
                     }
                     
                     NavigationLink(destination: FAQ()) {
-                        Text("FAQ                   ")
-                            .bold()
-                            .tint(.purple)
-                            .font(.system(size: 34))
-                            .background(
-                                            RoundedRectangle(cornerRadius: 10)
-                                                .stroke(Color.purple, lineWidth: 2)
-                                        )
+                        Image("FAQ")
+                            .resizable()
+                            .frame(width:220.0, height:90)
                             //.border(Color.purple)
                             
                             

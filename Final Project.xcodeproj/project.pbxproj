@@ -84,7 +84,6 @@
 		B725D7722C41C338004D8AEA = {
 			isa = PBXGroup;
 			children = (
-				B725D8582C4707C5004D8AEA /* HomePage.swift */,
 				B725D85A2C4707DA004D8AEA /* CalendarView.swift */,
 				B725D85C2C4707E9004D8AEA /* SymptomsView.swift */,
 				B725D85E2C4707FF004D8AEA /* FAQ.swift */,
@@ -109,6 +108,7 @@
 		B725D77D2C41C338004D8AEA /* Final Project */ = {
 			isa = PBXGroup;
 			children = (
+				B725D8582C4707C5004D8AEA /* HomePage.swift */,
 				B725D77E2C41C338004D8AEA /* Final_ProjectApp.swift */,
 				B725D7802C41C338004D8AEA /* ContentView.swift */,
 				B725D7822C41C33B004D8AEA /* Assets.xcassets */,

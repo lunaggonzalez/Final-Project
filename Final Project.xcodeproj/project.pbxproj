@@ -19,6 +19,7 @@
 		B725D85D2C4707E9004D8AEA /* SymptomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725D85C2C4707E9004D8AEA /* SymptomsView.swift */; };
 		B725D85F2C4707FF004D8AEA /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725D85E2C4707FF004D8AEA /* FAQ.swift */; };
 		B725D8612C470825004D8AEA /* Stigma.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725D8602C470825004D8AEA /* Stigma.swift */; };
+		B77843212C485E7600D91F6F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77843202C485E7600D91F6F /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B725D85C2C4707E9004D8AEA /* SymptomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsView.swift; sourceTree = "<group>"; };
 		B725D85E2C4707FF004D8AEA /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
 		B725D8602C470825004D8AEA /* Stigma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stigma.swift; sourceTree = "<group>"; };
+		B77843202C485E7600D91F6F /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				B725D85A2C4707DA004D8AEA /* CalendarView.swift */,
+				B77843202C485E7600D91F6F /* Date.swift */,
 				B725D85C2C4707E9004D8AEA /* SymptomsView.swift */,
 				B725D85E2C4707FF004D8AEA /* FAQ.swift */,
 				B725D8602C470825004D8AEA /* Stigma.swift */,
@@ -275,6 +278,7 @@
 				B725D7812C41C338004D8AEA /* ContentView.swift in Sources */,
 				B725D85D2C4707E9004D8AEA /* SymptomsView.swift in Sources */,
 				B725D85F2C4707FF004D8AEA /* FAQ.swift in Sources */,
+				B77843212C485E7600D91F6F /* Date.swift in Sources */,
 				B725D8612C470825004D8AEA /* Stigma.swift in Sources */,
 				B725D8592C4707C6004D8AEA /* HomePage.swift in Sources */,
 				B725D85B2C4707DA004D8AEA /* CalendarView.swift in Sources */,

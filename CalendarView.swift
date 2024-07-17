@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct CalendarView: View {
-    @State private var datesWithFlow: Set<DateComponents> = []
+    @State var selectedDate = Date()
     
     var body: some View {
-        Text("Calendar View")
-            .font(.title)
-       MultiDatePicker("", selection: $datesWithFlow)
+        VStack {
+            Text("Calendar View")
+                .font(.title)
+                .foregroundColor(Color.red)
+            CustomDatePicker(selectedDate: $selectedDate)
+                .padding()
+            Text(selectedDate.formatted(date: .abbreviated, time: .omitted)) // <-- you can customize (or omit it altogether) however you like!
+            Spacer()
+        }
     }
 }
-
 
 #Preview {
     CalendarView()

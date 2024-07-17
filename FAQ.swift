@@ -9,9 +9,15 @@ import SwiftUI
 
 struct FAQ: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("What do I do if....")
+            .font(.title)
+        Text("FAQ")
+            .font(.title3)
+            .fontWeight(.bold)
+            .foregroundColor(Color.red)
     }
 }
+
 
 #Preview {
     FAQ()

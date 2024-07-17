@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct CalendarView: View {
+    @State private var datesWithFlow: Set<DateComponents> = []
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Calendar View")
+            .font(.title)
+       MultiDatePicker("", selection: $datesWithFlow)
     }
 }
+
 
 #Preview {
     CalendarView()

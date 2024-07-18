@@ -25,11 +25,11 @@ struct HomePage: View {
                         .bold()
                         .multilineTextAlignment(.center)
                         .lineLimit(nil) // Allows unlimited lines
-                            .fixedSize(horizontal: false, vertical: true) // Wraps text within the frame
-                            .frame(width: 400)
+                            /*.fixedSize(horizontal: false, vertical: true)*/ // Wraps text within the frame
+                        .padding(.horizontal, 19.0)
+                        .frame(width: 400)
                     //Text("Welcome to Red Flag! ")
                     //Text("This app is here to help YOU track your period!")
-                    .padding()
                     NavigationLink(destination: CalendarView()) {
                         Image("Calendar")
                             .resizable()
@@ -55,7 +55,7 @@ struct HomePage: View {
                             //.border(Color.purple)
                             
                     }
-                    .padding()
+                    //.padding()
                     
                 }
                 

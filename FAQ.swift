@@ -10,7 +10,6 @@ import SwiftUI
 
 struct FAQ: View{
     var body: some View {
-      //  GeometryReader { geometry in
                 ZStack{
                     Color(red: 247/255, green: 184/255, blue: 210/255)
                         .ignoresSafeArea()
@@ -222,15 +221,21 @@ struct FAQ: View{
                                             .foregroundColor(.black)
                                     }
                                 )
-                                Text("Fun Fact: Even dogs and cats get periods! Any mammal with a uterus will have a period! ")
-                                    .font(.headline)
-                                    .multilineTextAlignment(.center)
-                                    .padding(.top,40)
+                                VStack{
+                                    Text("Fun Fact: Even dogs and cats get periods! Any mammal with a uterus will have a period! ")
+                                        .font(.headline)
+                                        .multilineTextAlignment(.center)
+                                        .padding(.top,20)
+                                        .padding(.bottom, 20)
+                                        .padding(.horizontal, 10)
+                                }
+                                .background(Rectangle().foregroundColor(.white))
+                                    .cornerRadius(15)
+                                .padding()
                             }
                             .padding(.all, 30)
                         }
                 })
-        //    }
             
             
         }

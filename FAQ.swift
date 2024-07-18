@@ -10,14 +10,11 @@ import SwiftUI
 
 struct FAQ: View{
     var body: some View {
-        GeometryReader { geometry in
+      //  GeometryReader { geometry in
                 ZStack{
-                    Image("pinkk")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: geometry.size.width, height: geometry.size.height + 100)
-                        .edgesIgnoringSafeArea(.all)
-                    
+                    Color(red: 247/255, green: 184/255, blue: 210/255)
+                        .ignoresSafeArea()
+                        .overlay(
                     ScrollView {
                         VStack(alignment: .center, spacing: 20) {
                             Text("What do I do if....")
@@ -232,8 +229,8 @@ struct FAQ: View{
                             }
                             .padding(.all, 30)
                         }
-                }
-            }
+                })
+        //    }
             
             
         }

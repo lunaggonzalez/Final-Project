@@ -21,9 +21,15 @@ struct HomePage: View {
                     Image("Red Flag")
                         .resizable()
                         .frame(width:300, height:125)
+                    Text("Welcome to Red Flags, the period tracker app! In this app, you can record your period and access period related information and facts!")
+                        .bold()
+                        .multilineTextAlignment(.center)
+                        .lineLimit(nil) // Allows unlimited lines
+                            /*.fixedSize(horizontal: false, vertical: true)*/ // Wraps text within the frame
+                        .padding(.horizontal, 19.0)
+                        .frame(width: 400)
                     //Text("Welcome to Red Flag! ")
                     //Text("This app is here to help YOU track your period!")
-                    .padding()
                     NavigationLink(destination: CalendarView()) {
                         Image("Calendar")
                             .resizable()
@@ -41,7 +47,15 @@ struct HomePage: View {
                             
                             
                     }
-                    .padding()
+                    NavigationLink(destination: Stigma()) {
+                        Image("Stigma")
+                            .resizable()
+                            .frame(width:200, height:90)
+                            
+                            //.border(Color.purple)
+                            
+                    }
+                    //.padding()
                     
                 }
                 

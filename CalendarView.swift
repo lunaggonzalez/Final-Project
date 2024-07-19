@@ -7,12 +7,31 @@
 
 import SwiftUI
 
+class Day {
+    var date = ""
+    var flowBool = false
+    var flow = ""
+    var pain = ""
+    
+    init(date: String){
+        self.date = date
+        self.flowBool = false
+        self.flow = ""
+        self.pain = ""
+    }
+}
+
+
 struct CalendarView: View {
-    @State var selectedDate = Date()
+    @State var selectedDate = Date() // how do I pass this value to symptoms view?
     @State var estimatedStartDay = "Not Enough Data Yet"
     @State var avgPeriodLen = "5 Days"
     @State var avgCycleLen = "29 Days"
     @State var heaviestFlowDays = "Day 1"
+    @State var formattedDate: String = ""
+    @State var daysDict : [String : Day] = [:]
+    @State var curDay : Day = Day(date: "")
+    
     
     var body: some View {
         ZStack{
@@ -22,9 +41,19 @@ struct CalendarView: View {
                 Text("Calendar View")
                     .font(.title)
                     .foregroundColor(Color.black)
-                CustomDatePicker(selectedDate: $selectedDate)
+                CustomDatePicker(selectedDate: $selectedDate, daysDict: $daysDict)
                     .padding()
-                Text(selectedDate.formatted(date: .abbreviated, time: .omitted)) // <-- you can customize (or omit it altogether) however you like!
+                Text(formattedDate)
+                    .onChange(of: selectedDate, initial: true) {
+                        formattedDate = selectedDate.formatted(date: .abbreviated, time: .omitted)
+                        if daysDict.keys.contains(formattedDate){
+                            curDay = daysDict[formattedDate]!
+                        } else{
+                            curDay = Day(date: formattedDate)
+                            daysDict[formattedDate]
+                        }
+                    }
+            
                 Spacer()
                 VStack{
                     HStack{
@@ -49,11 +78,11 @@ struct CalendarView: View {
                     }
                 }
                 Spacer()
-                NavigationLink(destination: SymptomsView()) {
-                    Image("Symptoms")
-                        .resizable()
-                        .frame(width:220.0, height:90)
-                }
+                NavigationLink(destination: SymptomsView(formattedDate: $formattedDate, curDay: $curDay )) {
+                        Image("Symptoms")
+                            .resizable()
+                            .frame(width:220.0, height:90)
+                    }
             }
         }
     }

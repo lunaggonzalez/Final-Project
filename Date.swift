@@ -32,6 +32,7 @@ struct DateValue: Identifiable {
 struct CustomDatePicker: View {
     // variable to keep track of what date a user clicks on
     @Binding var selectedDate: Date
+    @Binding var daysDict : [String : Day]
     
     @State private var month = 0
     @State private var currentDisplayedMonth = Date()
@@ -46,8 +47,8 @@ struct CustomDatePicker: View {
                 Button {
                     month -= 1
                 } label: {
-                    Image(systemName: "chevron.left") // <-- you can use any image you like!
-                        .foregroundStyle(.pink.opacity(0.7)) // <-- if not using a system symbol, this isn't necessary
+                    Image(systemName: "chevron.left")
+                        .foregroundStyle(.pink.opacity(0.7))
                 }
                 
                 VStack(alignment: .leading, spacing: 10) {
@@ -77,9 +78,6 @@ struct CustomDatePicker: View {
                                     }
                                     .frame(width: 30, height: 30)
                                 }
-//                                if value.flow == true{ // period                                     ZStack {
-//                                        Circle
-//                                    }
                             }
                             .onTapGesture {
                                 // update the selected date
@@ -127,7 +125,7 @@ struct CustomDatePicker: View {
         let currentMonth = getCurrentMonth()
         var dates = currentMonth.getAllDates().compactMap { date -> DateValue in
             let day = Calendar.current.component(.day, from: date)
-            return DateValue(day: day, date: date, flow: false)
+            return DateValue(day: day, date: date, flow: daysDict[date.formatted(date: .abbreviated, time: .omitted)]?.flowBool ?? false)
         }
         
         // add offset days

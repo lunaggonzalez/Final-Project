@@ -22,6 +22,10 @@ struct Stigma: View {
                         .multilineTextAlignment(.center)
                         .padding(.all, 20.0)
                     
+                    Image("PeriodPov")
+                        .resizable()
+                        .frame(width:350, height: 260)
+                    
                     Text("In developing countries, many people who menstruate do not have access to menstrual products like tampons and pads and are forced to use whatever cotton and paper they can find. Menstrual product companies are often criticized for adding 'pink tax' and 'tampon tax' to their products, making them even less accessible to those in need. In the US, 1 in 4 teens and 1 in 3 adults struggle to pay for period products.The lack of awareness, education, and accessibility of period products is a global issue that society must address.")
                         .multilineTextAlignment(.center)
                         .padding(.all, 20.0)
